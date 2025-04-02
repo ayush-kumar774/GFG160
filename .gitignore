@@ -1,0 +1,57 @@
+# General Ignore Rules
+*.log
+*.out
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db
+
+# Python Ignore Rules
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+.env
+.venv/
+Pipfile.lock
+poetry.lock
+.mypy_cache/
+.pytest_cache/
+
+# C++ Ignore Rules
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dSYM/
+cmake-build-debug/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+
+# Exclude C++ output folder
+output/
+
+
+# JavaScript Ignore Rules (Node.js, React, etc.)
+node_modules/
+npm-debug.log*
+yarn-error.log
+yarn-debug.log
+dist/
+build/
+*.min.js
+coverage/
+
+# VS Code Ignore Rules
+.vscode/
+*.code-workspace
+
+# PyCharm Ignore Rules
+.idea/
+*.iml
+*.ipr
+*.iws
