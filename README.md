@@ -9,13 +9,12 @@ Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!
 
 ## 📈 Progress Tracker
 
-| Day | Problem                          | Language | Concept Learned                     | Status |
-|-----|----------------------------------|----------|--------------------------------------|--------|
-| 1   | Second Largest                   | Java, CPP     | Array traversal, max tracking        | ✅     |
-| 2   | Push Zeros to End                | Java, CPP     | Two-pointer technique                | ✅     |
-| 3   | Reverse an Array                 | Java, CPP     | Two-pointer swap, in-place reversal  | ✅     |
-| 4   |                                  |          |                                      | ⏳     |
-| ... |                                  |          |                                      |        |
+| Day | Problem            | Java | C++ | Python | JS | Notes |
+|-----|---------------------|------|-----|--------|----|-------|
+| 1   | Second Largest      | ✅   | ✅  | ✅     | ✅ | Array traversal, max tracking |
+| 2   | Push Zeros to End   | ✅   | ✅  | ✅     | ✅ | Two-pointer swap |
+| 3   | Reverse an Array    | ✅   | ✅  | ✅     | ✅ | In-place reversal |
+
 
 ---
 
