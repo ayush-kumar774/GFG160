@@ -11,9 +11,9 @@ Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!
 
 | Day | Problem                          | Language | Concept Learned                     | Status |
 |-----|----------------------------------|----------|--------------------------------------|--------|
-| 1   | Second Largest                   | Java     | Array traversal, max tracking        | ✅     |
-| 2   | Push Zeros to End                | Java     | Two-pointer technique                | ✅     |
-| 3   | Reverse an Array                 | Java     | Two-pointer swap, in-place reversal  | ✅     |
+| 1   | Second Largest                   | Java, CPP     | Array traversal, max tracking        | ✅     |
+| 2   | Push Zeros to End                | Java, CPP     | Two-pointer technique                | ✅     |
+| 3   | Reverse an Array                 | Java, CPP     | Two-pointer swap, in-place reversal  | ✅     |
 | 4   |                                  |          |                                      | ⏳     |
 | ... |                                  |          |                                      |        |
 
