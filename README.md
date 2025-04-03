@@ -3,7 +3,6 @@
 Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!  
 📅 Goal: Solve 1 DSA problem daily for 160 consecutive days  
 🎯 Mission: Master problem-solving and build a rock-solid streak  
-🏆 Reward: GfG T-shirt on Day 81 + improved coding skills 💪  
 
 ---
 
@@ -21,7 +20,7 @@ Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!
 ## 🔗 Follow My Daily Updates
 
 📍 X (Twitter): [Aayush Kumar](https://x.com/AayushKumarCode)  
-🔖 Hashtags: `#gfg160` `#geekstreak2025` `#100DaysOfCode`  
+🔖 Hashtags: `#gfg160` `#geekstreak2025` `#160DaysOfCode`  
 
 ---
 
