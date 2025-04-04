@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "ArrayUtils.h"
 using namespace std;
 
 void reverseArray(vector<int> &arr)
@@ -14,15 +15,6 @@ void reverseArray(vector<int> &arr)
             end--;
       }
       
-}
-
-void printArray(const vector<int> &arr)
-{
-      for (int num : arr)
-      {
-            cout << num << " ";
-      }
-      cout << endl;
 }
 
 int main()

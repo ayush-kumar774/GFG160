@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "ArrayUtils.h"
 using namespace std;
 
 void moveZeroes(vector<int> &nums)
@@ -12,15 +13,6 @@ void moveZeroes(vector<int> &nums)
                   count++;
             }
       }
-}
-
-void printArray(const vector<int> &arr)
-{
-      for (int num : arr)
-      {
-            cout << num << " ";
-      }
-      cout << endl;
 }
 
 int main()

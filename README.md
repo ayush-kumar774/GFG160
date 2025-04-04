@@ -14,6 +14,7 @@ Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!
 | 1   | ✅   | ✅  | ✅     | ✅         |
 | 2   | ✅   | ✅  | ✅     | ✅         |
 | 3   | ✅   | ✅  | ✅     | ✅         |
+| 4   | ✅   | ✅  | ✅     | ✅         |
 <!-- END -->
 
 ---
