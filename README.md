@@ -9,12 +9,13 @@ Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!
 
 ## 📈 Progress Tracker
 
-| Day | Problem            | Java | C++ | Python | JS | Notes |
-|-----|---------------------|------|-----|--------|----|-------|
-| 1   | Second Largest      | ✅   | ✅  | ✅     | ✅ | Array traversal, max tracking |
-| 2   | Push Zeros to End   | ✅   | ✅  | ✅     | ✅ | Two-pointer swap |
-| 3   | Reverse an Array    | ✅   | ✅  | ✅     | ✅ | In-place reversal |
-
+<!-- START -->
+| Day | Java | C++ | Python | JavaScript |
+|-----|------|-----|--------|------------|
+| 1   | ✅   | ✅  | ✅     | ✅         |
+| 2   | ✅   | ✅  | ✅     | ✅         |
+| 3   | ✅   | ✅  | ✅     | ✅         |
+<!-- END -->
 
 ---
 
@@ -37,4 +38,3 @@ Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!
 ## 👨‍💻 Author
 
 Made with ❤️ by [Aayush Kumar](https://github.com/ayush-kumar774)
-
