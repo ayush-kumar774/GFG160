@@ -9,12 +9,19 @@ Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!
 ## 📈 Progress Tracker
 
 <!-- START -->
-| Day | Java | C++ | Python | JavaScript |
-|-----|------|-----|--------|------------|
-| 1   | ✅   | ✅  | ✅     | ✅         |
-| 2   | ✅   | ✅  | ✅     | ✅         |
-| 3   | ✅   | ✅  | ✅     | ✅         |
-| 4   | ✅   | ✅  | ✅     | ✅         |
+<!-- START -->
+| Day | Problem Title         | Description                                      | Approach / Hint                        | Java | C++ | Python | JS |
+|-----|------------------------|--------------------------------------------------|----------------------------------------|------|-----|--------|----|
+| 1   | Second Largest Element | Find 2nd max in array                            | Traverse once, track max & 2nd max     | ✅   | ✅  | ✅     | ✅ |
+| 2   | Push Zeros to End      | Shift all zeros to the right, keep order         | Two-pointer swap                       | ✅   | ✅  | ✅     | ✅ |
+| 3   | Reverse Array          | Reverse array in-place                           | Two-pointer from both ends             | ✅   | ✅  | ✅     | ✅ |
+| 4   | Rotate Array           | Rotate array left by `d` positions               | 3-step reversal                        | ✅   | ✅  | ✅     | ✅ |
+| 5   | Next Permutation       | Find next lexicographic permutation              | Find pivot, swap, reverse suffix       | ✅   | ✅  | ✅     | ✅ |
+| 6   | Majority Element > n/3 | Find elements appearing more than n/3 times      | Extended Boyer-Moore Voting            | ✅   | ✅  | ✅     | ✅ |
+| 7   | Stock Buy & Sell II    | Max profit with multiple transactions            | Greedy: add all upward slopes          | ✅   | ✅  | ✅     | ✅ |
+| 8   | Stock Buy & Sell I     | Max profit with only one transaction             | Track min so far, calc max profit diff | ✅   | ✅  | ✅     | ✅ |
+<!-- END -->
+
 <!-- END -->
 
 ---
