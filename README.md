@@ -8,21 +8,181 @@ Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!
 
 ## 📈 Progress Tracker
 
-<!-- START -->
-<!-- START -->
-| Day | Problem Title         | Description                                      | Approach / Hint                        | Java | C++ | Python | JS |
-|-----|------------------------|--------------------------------------------------|----------------------------------------|------|-----|--------|----|
-| 1   | Second Largest Element | Find 2nd max in array                            | Traverse once, track max & 2nd max     | ✅   | ✅  | ✅     | ✅ |
-| 2   | Push Zeros to End      | Shift all zeros to the right, keep order         | Two-pointer swap                       | ✅   | ✅  | ✅     | ✅ |
-| 3   | Reverse Array          | Reverse array in-place                           | Two-pointer from both ends             | ✅   | ✅  | ✅     | ✅ |
-| 4   | Rotate Array           | Rotate array left by `d` positions               | 3-step reversal                        | ✅   | ✅  | ✅     | ✅ |
-| 5   | Next Permutation       | Find next lexicographic permutation              | Find pivot, swap, reverse suffix       | ✅   | ✅  | ✅     | ✅ |
-| 6   | Majority Element > n/3 | Find elements appearing more than n/3 times      | Extended Boyer-Moore Voting            | ✅   | ✅  | ✅     | ✅ |
-| 7   | Stock Buy & Sell II    | Max profit with multiple transactions            | Greedy: add all upward slopes          | ✅   | ✅  | ✅     | ✅ |
-| 8   | Stock Buy & Sell I     | Max profit with only one transaction             | Track min so far, calc max profit diff | ✅   | ✅  | ✅     | ✅ |
-<!-- END -->
+### 🟢 Day 1
 
-<!-- END -->
+**🤩 Problem Statement:**  
+Find the second largest element in an array.
+
+**💭 Intuition:**  
+We need to track the two highest numbers while scanning once — no sorting or nested loops.
+
+**🛠️ Approach:**  
+Loop once through the array. Maintain two variables: `largest` and `secondLargest`. Update both when a new max is found.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 2
+
+**🤩 Problem Statement:**  
+Push all zeros to the end of the array while maintaining the order of other elements.
+
+**💭 Intuition:**  
+Use two pointers — one for tracking non-zero insert position, the other to scan the array.
+
+**🛠️ Approach:**  
+Swap every non-zero element forward into its correct position, shift zeros naturally.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 3
+
+**🤩 Problem Statement:**  
+Reverse an array in-place.
+
+**💭 Intuition:**  
+Swap elements from both ends towards the center — no need for extra space.
+
+**🛠️ Approach:**  
+Two-pointer approach: one from start, one from end, and swap until they meet.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 4
+
+**🤩 Problem Statement:**  
+Rotate array left by `d` positions.
+
+**💭 Intuition:**  
+Breaking and shifting manually is tricky, but reversing segments is clean.
+
+**🛠️ Approach:**  
+Reverse first d elements, reverse remaining, then reverse whole array.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 5
+
+**🤩 Problem Statement:**  
+Find the next lexicographic permutation of an array.
+
+**💭 Intuition:**  
+Find a pivot where order breaks, then adjust right-side to be smallest larger permutation.
+
+**🛠️ Approach:**  
+Find the first `i` where arr[i] < arr[i+1], then find just larger, swap, reverse suffix.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 6
+
+**🤩 Problem Statement:**  
+Find all elements appearing more than n/3 times.
+
+**💭 Intuition:**  
+There can be at most 2 such elements. Use a voting mechanism to track candidates.
+
+**🛠️ Approach:**  
+Extended Boyer-Moore Voting Algorithm. Select up to 2 candidates, verify counts.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 7
+
+**🤩 Problem Statement:**  
+Maximize profit by buying/selling stock multiple times.
+
+**💭 Intuition:**  
+Profit is found in every upward slope between days.
+
+**🛠️ Approach:**  
+Whenever prices[i] > prices[i-1], add the difference to profit.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 8
+
+**🤩 Problem Statement:**  
+Max profit with only one buy-sell operation allowed.
+
+**💭 Intuition:**  
+Buy at the lowest so far, sell at the current if it's more profitable.
+
+**🛠️ Approach:**  
+Track `minPriceSoFar`, and update `maxProfit = max(maxProfit, price - minPriceSoFar)`  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 9
+
+**🤩 Problem Statement:**  
+Minimize the difference between tallest and shortest towers after +/-K.
+
+**💭 Intuition:**  
+Try increasing the short and decreasing the tall towers. Sort to simplify.
+
+**🛠️ Approach:**  
+Sort array. Try cutting at every i, and update potential min/max bounds.  
+Time: O(n log n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 10
+
+**🤩 Problem Statement:**  
+Find max sum of contiguous subarray (can be negative too).
+
+**💭 Intuition:**  
+If the current sum goes negative, restart. Else keep adding.
+
+**🛠️ Approach:**  
+Kadane's Algorithm: maintain `maxSoFar` and `currentMax`.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 11
+
+**🤩 Problem Statement:**  
+Find the contiguous subarray with maximum product.
+
+**💭 Intuition:**  
+Negative numbers can flip max ↔ min. Track both.
+
+**🛠️ Approach:**  
+Keep `maxSoFar`, `minSoFar`. On negative input, swap both.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
 
 ---
 
