@@ -1,12 +1,35 @@
-# 🧠 GeeksforGeeks 160 Day DSA Challenge
+<h1 align="center">💻 160 Days of DSA Challenge (GfG x 4 Languages)</h1>
+<p align="center">
+  Solving one DSA problem daily for 160 days in Java, C++, Python, and JavaScript.<br/>
+  Sharing intuition, approach, and code — one day at a time ✨
+</p>
 
-Welcome to my journey through the **#gfg160** challenge by @geeksforgeeks!  
-📅 Goal: Solve 1 DSA problem daily for 160 consecutive days  
-🎯 Mission: Master problem-solving and build a rock-solid streak  
+<p align="center">
+  <a href="https://x.com/AayushKumarCode"><img src="https://img.shields.io/twitter/follow/AayushKumarCode?style=social" /></a>
+  <img src="https://img.shields.io/badge/Day-11-brightgreen" />
+  <img src="https://img.shields.io/badge/Challenge-%23160DaysOfCode-blueviolet" />
+</p>
+
+---
+
+## 📚 What’s Inside This Repo
+
+- 📌 160 curated DSA problems from GeeksforGeeks
+- 💡 Explained with intuition + clean approach
+- 🧠 Solved in **Java, C++, Python, JavaScript**
+- 🚀 Updated daily with commit history as a timeline
+- 🎯 Personal learning journey + public reference guide
 
 ---
 
 ## 📈 Progress Tracker
+
+> Problems solved so far: 11/160  
+> Scroll down to see Day-wise logs!
+
+---
+
+## ✅ Day-wise Journal
 
 ### 🟢 Day 1
 
@@ -203,3 +226,5 @@ Time: O(n) | Space: O(1)
 ## 👨‍💻 Author
 
 Made with ❤️ by [Aayush Kumar](https://github.com/ayush-kumar774)
+
+---
