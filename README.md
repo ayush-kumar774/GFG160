@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://x.com/AayushKumarCode"><img src="https://img.shields.io/twitter/follow/AayushKumarCode?style=social" /></a>
-  <img src="https://img.shields.io/badge/Day-11-brightgreen" />
+  <img src="https://img.shields.io/badge/Day-12-brightgreen" />
   <img src="https://img.shields.io/badge/Challenge-%23160DaysOfCode-blueviolet" />
 </p>
 
@@ -204,6 +204,30 @@ Keep `maxSoFar`, `minSoFar`. On negative input, swap both.
 Time: O(n) | Space: O(1)
 
 **💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 12
+
+**🤩 Problem Statement:**  
+Find the maximum subarray sum in a circular array.
+
+**💭 Intuition:**  
+In circular arrays, the max subarray is either:
+
+- a normal max (Kadane), OR  
+- a wrap-around = total sum - min subarray sum
+
+**🛠️ Approach:**  
+Run Kadane's to get max subarray normally.  
+Then, compute total sum - min subarray (also using Kadane logic).  
+Return the greater of the two.  
+Edge Case: if all elements are negative, return max alone.  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:**  
+Java, C++, Python, JavaScript ✅
+
 
 ---
 
