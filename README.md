@@ -24,7 +24,7 @@
 
 ## 📈 Progress Tracker
 
-> Problems solved so far: 11/160  
+> Problems solved so far: 13/160  
 > Scroll down to see Day-wise logs!
 
 ---
