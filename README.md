@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://x.com/AayushKumarCode"><img src="https://img.shields.io/twitter/follow/AayushKumarCode?style=social" /></a>
-  <img src="https://img.shields.io/badge/Day-12-brightgreen" />
+  <img src="https://img.shields.io/badge/Day-13-brightgreen" />
   <img src="https://img.shields.io/badge/Challenge-%23160DaysOfCode-blueviolet" />
 </p>
 
@@ -228,6 +228,26 @@ Time: O(n) | Space: O(1)
 **💻 Languages Solved In:**  
 Java, C++, Python, JavaScript ✅
 
+---
+
+### 🟢 Day 13
+
+**🤩 Problem Statement:**  
+Find the smallest positive number missing from the array.
+
+**💭 Intuition:**  
+Each positive integer `x` should ideally be placed at index `x - 1`.  
+If we rearrange the array using this logic, the first index `i` where `arr[i] != i + 1` gives us the missing number.
+
+**🛠️ Approach:**  
+Use in-place hashing (cycle-sort style):  
+- Swap elements to their correct index positions  
+- After rearrangement, scan to find the first missing number  
+Edge Case: If all are in correct position → answer is `n + 1`  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:**  
+Java, C++, Python, JavaScript ✅
 
 ---
 
