@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://x.com/AayushKumarCode"><img src="https://img.shields.io/twitter/follow/AayushKumarCode?style=social" /></a>
-  <img src="https://img.shields.io/badge/Day-13-brightgreen" />
+  <img src="https://img.shields.io/badge/Day-14-brightgreen" />
   <img src="https://img.shields.io/badge/Challenge-%23160DaysOfCode-blueviolet" />
 </p>
 
@@ -241,9 +241,39 @@ If we rearrange the array using this logic, the first index `i` where `arr[i] !=
 
 **🛠️ Approach:**  
 Use in-place hashing (cycle-sort style):  
-- Swap elements to their correct index positions  
-- After rearrangement, scan to find the first missing number  
+
+- Swap elements to their correct index positions
+- After rearrangement, scan to find the first missing number
 Edge Case: If all are in correct position → answer is `n + 1`  
+Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:**  
+Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 14
+
+**🤩 Problem Statement:**  
+Implement the classic `atoi()` function to convert a string to an integer without using built-in functions.
+
+**💭 Intuition:**  
+Handle:
+
+- Leading whitespaces  
+- Optional '+' or '-' sign  
+- Continuous digits  
+- Cut off at first non-digit  
+Also check for **overflow** and return INT_MAX / INT_MIN accordingly.
+
+**🛠️ Approach:**
+
+- Skip leading spaces  
+- Identify and store sign  
+- Parse digits one by one  
+- Check overflow *before* multiplying  
+- Multiply by sign and return  
+
 Time: O(n) | Space: O(1)
 
 **💻 Languages Solved In:**  
