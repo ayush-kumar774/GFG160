@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://x.com/AayushKumarCode"><img src="https://img.shields.io/twitter/follow/AayushKumarCode?style=social" /></a>
-  <img src="https://img.shields.io/badge/Day-14-brightgreen" />
+  <img src="https://img.shields.io/badge/Day-15-brightgreen" />
   <img src="https://img.shields.io/badge/Challenge-%23160DaysOfCode-blueviolet" />
 </p>
 
@@ -275,6 +275,31 @@ Also check for **overflow** and return INT_MAX / INT_MIN accordingly.
 - Multiply by sign and return  
 
 Time: O(n) | Space: O(1)
+
+**💻 Languages Solved In:**  
+Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 15
+
+**🤩 Problem Statement:**  
+Given two binary strings `s1` and `s2`, return their sum as a binary string (with no leading zeros).
+
+**💭 Intuition:**  
+Binary addition is just like regular addition but in base 2.  
+Start from the end, add digits with carry, and handle any overflow.  
+Finally, remove leading zeros.
+
+**🛠️ Approach:**  
+
+- Use two pointers from the end of both strings  
+- Maintain a carry  
+- Keep appending `sum % 2` and updating carry with `sum / 2`  
+- Reverse the string at the end  
+- Trim leading zeros (edge case: if all are zero, return `"0"`)  
+
+Time: O(max(n, m)) | Space: O(max(n, m))
 
 **💻 Languages Solved In:**  
 Java, C++, Python, JavaScript ✅
