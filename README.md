@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://x.com/AayushKumarCode"><img src="https://img.shields.io/twitter/follow/AayushKumarCode?style=social" /></a>
-  <img src="https://img.shields.io/badge/Day-15-brightgreen" />
+  <img src="https://img.shields.io/badge/Day-16-brightgreen" />
   <img src="https://img.shields.io/badge/Challenge-%23160DaysOfCode-blueviolet" />
 </p>
 
@@ -24,7 +24,7 @@
 
 ## 📈 Progress Tracker
 
-> Problems solved so far: 13/160  
+> Problems solved so far: 16 / 160  
 > Scroll down to see Day-wise logs!
 
 ---
@@ -305,6 +305,28 @@ Time: O(max(n, m)) | Space: O(max(n, m))
 Java, C++, Python, JavaScript ✅
 
 ---
+
+### 🟢 Day 16
+
+**🤩 Problem Statement:**  
+Check whether two given strings are anagrams of each other.
+
+**💭 Intuition:**  
+Two strings are anagrams if the frequency of every character matches.  
+Instead of sorting, use a frequency array of size 26 and compare.
+
+**🛠️ Approach:**  
+
+- Traverse both strings in one loop  
+- For each char in s1 → increment its count  
+- For each char in s2 → decrement its count  
+- In the end, check if all frequencies are 0  
+Time: O(n) | Space: O(1)
+
+---
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
 
 ## 🔗 Follow My Daily Updates
 
