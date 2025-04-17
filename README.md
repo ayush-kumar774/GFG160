@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://x.com/AayushKumarCode"><img src="https://img.shields.io/twitter/follow/AayushKumarCode?style=social" /></a>
-  <img src="https://img.shields.io/badge/Day-16-brightgreen" />
+  <img src="https://img.shields.io/badge/Day-17-brightgreen" />
   <img src="https://img.shields.io/badge/Challenge-%23160DaysOfCode-blueviolet" />
 </p>
 
@@ -24,7 +24,7 @@
 
 ## 📈 Progress Tracker
 
-> Problems solved so far: 16 / 160  
+> Problems solved so far: 17 / 160  
 > Scroll down to see Day-wise logs!
 
 ---
@@ -323,10 +323,31 @@ Instead of sorting, use a frequency array of size 26 and compare.
 - In the end, check if all frequencies are 0  
 Time: O(n) | Space: O(1)
 
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
 ---
+
+### 🟢 Day 17
+
+**🤩 Problem Statement:**  
+Given a lowercase string, return the first non-repeating character. If none exists, return '$'.
+
+**💭 Intuition:**  
+We can solve this in 2 passes:
+
+- 1st pass: count frequencies in a size-26 array
+- 2nd pass: return the first character with count = 1
+
+**🛠️ Approach:**  
+
+- Use a frequency array `freq[26]`
+- Traverse once to count
+- Traverse again to return the first char with freq 1  
+Time: O(n) | Space: O(1)
 
 **💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
 
+---
 
 ## 🔗 Follow My Daily Updates
 
