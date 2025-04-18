@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://x.com/AayushKumarCode"><img src="https://img.shields.io/twitter/follow/AayushKumarCode?style=social" /></a>
-  <img src="https://img.shields.io/badge/Day-17-brightgreen" />
+  <img src="https://img.shields.io/badge/Day-18-brightgreen" />
   <img src="https://img.shields.io/badge/Challenge-%23160DaysOfCode-blueviolet" />
 </p>
 
@@ -24,7 +24,7 @@
 
 ## 📈 Progress Tracker
 
-> Problems solved so far: 17 / 160  
+> Problems solved so far: 18 / 160  
 > Scroll down to see Day-wise logs!
 
 ---
@@ -346,6 +346,69 @@ We can solve this in 2 passes:
 Time: O(n) | Space: O(1)
 
 **💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+### 🟢 Day 18
+
+**🤩 Problem Statement:**  
+Given a text string `txt` and a pattern string `pat`, find all starting indices of `pat`'s occurrence in `txt` using 0-based indexing.  
+Return an empty list if the pattern doesn't occur.
+
+**💭 Intuition:**  
+A brute-force method checks every substring, which is inefficient.  
+KMP optimizes by preprocessing the `pat` to build a Longest Prefix Suffix (LPS) array, so we can skip unnecessary comparisons.
+
+**🛠️ Approach:**  
+1. Build the LPS array for the pattern.  
+2. Traverse the text string while comparing with `pat`.  
+3. On mismatch, use LPS to jump the `j` index instead of starting from scratch.  
+4. On full match, store the starting index.  
+Time: `O(n + m)` | Space: `O(m)`
+
+**💻 Languages Solved In:** Java, C++, Python, JavaScript ✅
+
+---
+
+#### ✅ Java (KMP Approach)
+
+```java
+ArrayList<Integer> search(String pat, String txt) {
+    ArrayList<Integer> result = new ArrayList<>();
+    int n = txt.length(), m = pat.length();
+    int[] lps = computeLPS(pat);
+    int i = 0, j = 0;
+
+    while (i < n) {
+        if (txt.charAt(i) == pat.charAt(j)) {
+            i++; j++;
+        }
+
+        if (j == m) {
+            result.add(i - j);
+            j = lps[j - 1];
+        } else if (i < n && txt.charAt(i) != pat.charAt(j)) {
+            j = (j != 0) ? lps[j - 1] : 0;
+        }
+    }
+    return result;
+}
+
+int[] computeLPS(String pat) {
+    int[] lps = new int[pat.length()];
+    int len = 0, i = 1;
+
+    while (i < pat.length()) {
+        if (pat.charAt(i) == pat.charAt(len)) {
+            lps[i++] = ++len;
+        } else {
+            if (len != 0) len = lps[len - 1];
+            else lps[i++] = 0;
+        }
+    }
+    return lps;
+}
+```
 
 ---
 
